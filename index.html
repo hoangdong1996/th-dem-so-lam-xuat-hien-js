@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lần xuất hiện</title>
+</head>
+<body>
+<script>
+    function count(arr, data) {
+        let count = 0;
+        for (let i=0; i<arr.length; i++) {
+                if (arr[i] === data) {
+                    count++;
+            }
+        }
+        return count;
+    }
+
+    let num = [];
+    for (let i=0; i<100; i++) {
+        num[i] = Math.floor(Math.random()*101);
+    }
+    console.log(num.join(" "));
+    console.log(count(num,33))
+</script>
+</body>
+</html>
